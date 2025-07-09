@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 import io.restassured.response.Response;
 
-public class Test01_GetMethod {
+public class Test_GetMethod {
 	Response response;
 	@Test(priority = 1)
 	public void Test1() {
