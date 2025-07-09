@@ -9,7 +9,7 @@ import io.restassured.response.Response;
 public class Test01_GetMethod {
 	Response response;
 	@Test(priority = 1)
-	public void Test01() {
+	public void Test1() {
 		 response = get("https://reqres.in/api/users?page=2");
 		System.out.println("Response Code:: "+response.asString());
 		System.out.println("Response Body:: "+response.getBody().asString());
@@ -25,5 +25,6 @@ public class Test01_GetMethod {
 	public void Test02() {
 		baseURI = "https://reqres.in/api/users";
 		given().queryParam("page", "2").when().get().then().statusCode(200);
+		
 	}
 }
