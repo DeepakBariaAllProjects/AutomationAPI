@@ -24,7 +24,11 @@ class CheckForValidResponse {
 		 int statusCode  = response.getStatusCode();
 		 
 		 //validate actual status code with expected
-		 Assert.assertEquals(statusCode, 200);
+		// Assert.assertEquals(statusCode, 200);
+		 
+		 String statusLine = response.statusLine();
+		 Assert.assertEquals(statusLine , "HTTP/1.1 200 OK");
 		
+		 
 	}
 }
