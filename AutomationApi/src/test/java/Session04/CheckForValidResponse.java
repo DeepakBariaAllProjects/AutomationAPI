@@ -27,7 +27,7 @@ class CheckForValidResponse {
 		// Assert.assertEquals(statusCode, 200);
 		 
 		 String statusLine = response.statusLine();
-		 Assert.assertEquals(statusLine , "HTTP/1.1 200 OK");
+		 Assert.assertEquals(statusLine , "HTTP/1.1 200 OK"); 
 		
 		 
 	}
